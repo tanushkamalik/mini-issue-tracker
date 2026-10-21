@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini Issue Tracker
+
+A web application built with Next.js and Supabase to manage issues through a simple interface. The project demonstrates full-stack development concepts, database integration, and CRUD operations.
+
+## Features
+
+- Create new issues.
+- View and manage issues.
+- Integrate the application with Supabase.
+- Use Next.js for frontend development and backend API functionality.
+- Configure database access and permissions.
+
+## Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript
+- **Backend:** Next.js API routes
+- **Database:** Supabase (PostgreSQL)
+- **Styling:** Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js and npm
+- A Supabase account and project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/mini-issue-tracker.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd mini-issue-tracker
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Create a `.env.local` file in the project root and add your Supabase configuration:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Replace the placeholder values with your own Supabase project credentials. Never commit your `.env.local` file or expose secret keys.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Database Setup
+
+Configure your Supabase PostgreSQL database with the tables, permissions, and Row Level Security policies required by the application. Refer to your project's database schema and API code for the exact setup.
+
+## Learning Objectives
+
+- Understanding Next.js application structure.
+- Connecting a web application to Supabase.
+- Implementing issue creation and data retrieval.
+- Working with database permissions and access policies.
+- Practising full-stack application development.
+
+## Future Improvements
+
+- Add issue editing and deletion.
+- Implement user authentication.
+- Add issue status, priority, and filtering.
+- Improve form validation and error handling.
+
+## License
+
+No license has been specified yet.
